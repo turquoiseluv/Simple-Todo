@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <!-- 로그인 절차 없이는 창을 못 끄게 막아둠 -->
+        <!-- <span class="close">&times;</span> -->
+        <form id='login-form'>
+          <p class="container">
+            <b>Username</b>
+            <input id="login-id" type="text" placeholder="Enter Username" required>
+            <b>Password</b>
+            <input id="login-pw" type="password" placeholder="Enter Password">
+            <button type="submit" class="login-btn">로그인</button>
+            <button class="login-create">계정 생성</button>
+            <input type="checkbox" id="login-auto"> Auto Login
+          </p>
+        </form>
+      </div>
+    </div>
+    <div id="left-panel">
+      <button class="left-btn" id="change-user">유저 변경</button>
+      <button class="left-btn" id="todo-table-delete">현재 리스트 삭제</button>
+      <div id="todo-table"></div>
+      <button class="left-btn" id="todo-table-add">리스트 추가</button>
+    </div>
+    <div id="right-panel">
+      <div id="user-name">Loading...</div>
+      <div id="input-wrapper">
+        <input id="todo-input" required>
+        <label id="input-label"></label>
+      </div>
+      <div id="todo-list"></div>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
