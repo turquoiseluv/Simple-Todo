@@ -1,7 +1,7 @@
 body{
     display: flex;
     flex-direction: row;
-    font-family: 'NEXONLv1GothicRegular';
+    font-family: 'Montserrat', sans-serif;
 }
 
 #right-panel{
